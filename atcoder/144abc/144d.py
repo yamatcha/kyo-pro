@@ -1,0 +1,9 @@
+import math
+
+a,b,x = map(int,input().split())
+
+if x >= a**2*b/2:
+    theta = math.atan(2*((a**2)*b-x)/(a**3))
+else:
+    theta = math.atan((a*(b**2))/(2*x))
+print(math.degrees(theta))
